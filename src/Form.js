@@ -22,7 +22,7 @@ const Form = ({ amount, setAmount, txt, setTxt, formSubmit, setType }) => {
           <select
             name="type"
             id="type"
-            onChange={e=> setType(e.target.value)}
+            onChange={e => setType(e.target.value)}
           >
             <option value="income">Income</option>
             <option value="expense">Expense</option>
@@ -38,6 +38,7 @@ const Form = ({ amount, setAmount, txt, setTxt, formSubmit, setType }) => {
           onChange={e => setAmount(Number(e.target.value))}
         />
         <button
+          className='submitBtn'
           type='submit'
         >Add transaction</button>
       </form>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Balance = ({transaction, handleReset}) => {
+const Balance = ({transaction, conformReset}) => {
   let income = 0
   let expense = 0
   if(transaction.length){
@@ -15,7 +15,7 @@ const Balance = ({transaction, handleReset}) => {
 
   return (
     <section>
-        <h3 className='subtitle'>Your Balance <button className='reset' onClick={handleReset} type='button'>reset</button></h3>
+        <h3 className='subtitle'>Your Balance <button className='reset' onClick={conformReset} type='button'>reset</button></h3>
         <p className="balance">&#8377; {income-expense}</p>
         <aside className="statement">
             <div className="flow">
